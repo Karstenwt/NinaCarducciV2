@@ -81,6 +81,13 @@ body {
 .social-link img {
   width: 20px;
 }
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 #about {
   background-color: #f6d2b8;
 }
@@ -267,31 +274,35 @@ input[type="submit"] {
     text-align: center;
     margin-top: 1em;
   }
-  .service {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 2em 0;
-  }
-  .service__description {
-    margin-bottom: 1em;
-  }
-  #services .container::before {
-    width: 30%;
-    height: 100%;
-    bottom: 0;
-    right: 0;
-    left: auto;
-    z-index: 0;
-  }
-  #contact .picture.right {
-    margin-top: 1em;
-  }
-  .picture.right::before {
-    bottom: 0;
-    right: 0;
+  .about-me__introduction {
+    width: 80vw;
   }
 }
+.service {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+.service__description {
+  margin-bottom: 1em;
+}
+#services .container::before {
+  width: 30%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  z-index: 0;
+}
+#contact .picture.right {
+  margin-top: 1em;
+}
+.picture.right::before {
+  bottom: 0;
+  right: 0;
+}
+
 @media all and (max-width: 650px) {
   .top-header {
     flex-direction: column;
